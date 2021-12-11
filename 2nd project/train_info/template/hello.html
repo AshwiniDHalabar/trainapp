@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>
+traintimmings
+</title>
+</head>
+<body>
+<h1>Train Information<br><br></h1>
+<p>
+    {% for ele in record %}
+        <h2> 
+		    {{ele.name}} </h2>
+        Train_ID       : {{ele.train_id}} <br>
+        Departure_Date : {{ele.departure_date}}<br>
+        Departure_Time : {{ele.departure_time}}<br>
+        Journey_Duration :{{ele.duration}}<br> 
+</p>{% endfor %}
+</body>
+</html>
